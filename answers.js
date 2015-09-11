@@ -129,5 +129,12 @@ function filtered(someStuff) {
     return filteredStuff;
 }
 
+//This function takes an array of numbers and returns the sum of all the numbers in the array.
 
-
+function sumOfNums(Nums) {
+    var sum = 0
+    for (var i = 0; i < Nums.length; i++) {
+        sum = sum + Nums[i];
+    }
+    return sum;
+}
