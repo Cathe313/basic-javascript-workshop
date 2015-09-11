@@ -9,3 +9,9 @@ function firstCharacter(string) {
 function lastCharacter(string) {
     return string [ string.length - 1 ];
 }
+
+//This function takes a string and a number as arguments, and returns the character at the position represented by the number
+
+function letterPosition (string, num) {
+    return string[num];
+}
