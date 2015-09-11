@@ -69,3 +69,14 @@ function reverse(string) {
     }
     return a;
 }
+
+//This function takes a number and returns the factorial of a number. It doesn't work on negative numbers though.
+
+function factorial (num) {
+    if (num === 1 || num === 0) {
+        return 1;
+    } else {
+        return num * factorial(num - 1);
+    }
+}
+
