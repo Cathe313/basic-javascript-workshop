@@ -110,9 +110,17 @@ function cap(sentence) {
     return capSentence
 }
 
+//This function takes an array and returns the largest number of the array. 
 
-
-
+function largestNum(nums) {
+    var bigNum = 0
+    for (var i = 0; i < nums.length; i++) {
+        if (nums[i] > bigNum) {
+            bigNum = nums[i]
+        } else continue
+    }
+    return bigNum
+}
 
 
 
