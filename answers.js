@@ -1,19 +1,19 @@
 //This function takes a string and returns its first character.
 
-function firstCharacter(string) {
-    return string[0];
+function firstCharacter(word) {
+    return word[0];
 }
 
 //This function takes a string and returns its last character. 
 
-function lastCharacter(string) {
-    return string [ string.length - 1 ];
+function lastCharacter(word) {
+    return word [ word.length - 1 ];
 }
 
 //This function takes a string and a number, and returns the character at the position represented by the number
 
-function letterPosition (string, num) {
-    return string[num];
+function letterPosition (word, num) {
+    return word[num];
 }
 
 //This function takes two numbers and adds them together.
@@ -34,14 +34,14 @@ function multiply(num1, num2) {
 the difference. If the string is ‘mult’, it returns the product. If the string is ‘div’, it returns the ratio. Otherwise it returns 0.
 */
 
-function mathIsFun(string, num1, num2) {
-    if (string === "add") {
+function mathIsFun(word, num1, num2) {
+    if (word === "add") {
         return num1 + num2;
-    } else if (string === "subtract") {
+    } else if (word === "subtract") {
         return num1 - num2;
-    } else if (string === "mult") {
+    } else if (word === "mult") {
         return num1 * num2;
-    } else if (string === "div") {
+    } else if (word === "div") {
         return num1 / num2;
     } else {
         return 0;
@@ -50,10 +50,10 @@ function mathIsFun(string, num1, num2) {
 
 //This function takes a string and a number, and returns the string repeated that many number of times.
 
-function multiplyString(string, num) {
+function multiplyString(word, num) {
     var a = "";
     while (num > 0) {
-        a = a + string + " ";
+        a = a + word + " ";
         num = num - 1;
     }
     return a;
@@ -61,11 +61,12 @@ function multiplyString(string, num) {
 
 //This function takes a string and returns the reverse of that string.
 
-function reverse(string) {
-    var a = ""
-    while (string.length > 0) {
-        a = a + string[ string.length - 1 ];
-        string = string.slice(0, -1);
+function reverse(word) {
+    var a = "";
+    var b = word.length - 1;
+    while (b >= 0) {
+        a = a + word[b];
+        b = b - 1;
     }
     return a;
 }
@@ -79,4 +80,18 @@ function factorial (num) {
         return num * factorial(num - 1);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
