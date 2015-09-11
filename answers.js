@@ -23,5 +23,10 @@ function addNum (num1, num2) {
     return num1 + num2;
 }
 
+//This function takes two numbers and multiplies them together.
+//The function returns NaN when a string is passed as argument. True takes a value of 1 and both false and the empty array take a value of 0.
 
+function multiply(num1, num2) {
+    return num1*num2;
+}
 
