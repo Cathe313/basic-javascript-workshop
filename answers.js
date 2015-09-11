@@ -59,4 +59,13 @@ function multiplyString(string, num) {
     return a;
 } 
 
+//This function takes a string and returns the reverse of that string.
 
+function reverse(string) {
+    var a = ""
+    while (string.length > 0) {
+        a = a + string[ string.length - 1 ];
+        string = string.slice(0, -1);
+    }
+    return a;
+}
