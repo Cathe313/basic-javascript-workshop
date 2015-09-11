@@ -122,9 +122,12 @@ function largestNum(nums) {
     return bigNum
 }
 
+//This function takes an array and returns a filtered array.
 
-
-
+function filtered(someStuff) {
+    var filteredStuff = someStuff.filter(Boolean);
+    return filteredStuff;
+}
 
 
 
