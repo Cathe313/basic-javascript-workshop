@@ -97,7 +97,18 @@ function longWord(sentence) {
     return longestWord;
 }
 
+//This function takes a phrase and returns the same phrase with every word capitalized.
 
+function cap(sentence) {
+    var split = sentence.split(" ");
+    var capSentence = ""
+    var capWord = ""
+    for (var i = 0; i < split.length; i++ ) {
+        capWord = split[i].charAt(0).toUpperCase() + split[i].slice(1).toLowerCase();
+        capSentence = capSentence + " " + capWord
+    }
+    return capSentence
+}
 
 
 
