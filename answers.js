@@ -30,3 +30,20 @@ function multiply(num1, num2) {
     return num1*num2;
 }
 
+/* This function takes two numbers and a string. If the string is ‘add’, it returns the sum of the numbers. If the string is ‘subtract’, it returns
+the difference. If the string is ‘mult’, it returns the product. If the string is ‘div’, it returns the ratio. Otherwise it returns 0.
+*/
+
+function mathIsFun(string, num1, num2) {
+    if (string === "add") {
+        return num1 + num2;
+    } else if (string === "subtract") {
+        return num1 - num2;
+    } else if (string === "mult") {
+        return num1 * num2;
+    } else if (string === "div") {
+        return num1 / num2;
+    } else {
+        return 0;
+    }
+}
