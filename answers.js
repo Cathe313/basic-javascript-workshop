@@ -81,7 +81,21 @@ function factorial (num) {
     }
 }
 
+//This function takes a phrase as a string and returns the longest word in that phrase. 
+//If the phrase contains more than one such word, it will return the first occurrence.
 
+function longWord(sentence) {
+    var split = sentence.split(" ");
+    var letterCount = 0;
+    var longestWord = "";
+    for (var i = 0; i < split.length; i++ ) {
+        if (split[i].length > letterCount) {
+            letterCount = split[i].length;
+            longestWord = split[i];
+        } else continue;
+    }
+    return longestWord;
+}
 
 
 
