@@ -47,3 +47,16 @@ function mathIsFun(string, num1, num2) {
         return 0;
     }
 }
+
+//This function takes a string and a number, and returns the string repeated that many number of times.
+
+function multiplyString(string, num) {
+    var a = "";
+    while (num > 0) {
+        a = a + string + " ";
+        num = num - 1;
+    }
+    return a;
+} 
+
+
