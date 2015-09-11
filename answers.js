@@ -138,3 +138,20 @@ function sumOfNums(Nums) {
     }
     return sum;
 }
+
+//This function takes two arrays and returns an array of all elements that are only in one array. 
+
+function uniqueElements(group1, group2) {
+    var unique = [];
+    for (var i = 0; i < group1.length; i++) {
+        if (group2.indexOf(group1[i]) === -1) {
+            unique.push(group1[i]);
+        } else continue;
+    }
+    for (var i = 0; i < group2.length; i++) {
+        if (group1.indexOf(group2[i]) === -1) {
+            unique.push(group2[i]);
+        } else continue;
+    }
+    return unique;
+}
