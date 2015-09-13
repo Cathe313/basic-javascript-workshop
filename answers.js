@@ -92,7 +92,7 @@ function longWord(sentence) {
         if (split[i].length > letterCount) {
             letterCount = split[i].length;
             longestWord = split[i];
-        } else continue;
+        }
     }
     return longestWord;
 }
