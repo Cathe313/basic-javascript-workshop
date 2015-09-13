@@ -117,7 +117,7 @@ function largestNum(nums) {
     for (var i = 0; i < nums.length; i++) {
         if (nums[i] > bigNum) {
             bigNum = nums[i]
-        } else continue
+        }
     }
     return bigNum
 }
@@ -125,16 +125,15 @@ function largestNum(nums) {
 //This function takes an array and returns a filtered array.
 
 function filtered(someStuff) {
-    var filteredStuff = someStuff.filter(Boolean);
-    return filteredStuff;
+    return someStuff.filter(Boolean);
 }
 
 //This function takes an array of numbers and returns the sum of all the numbers in the array.
 
-function sumOfNums(Nums) {
+function sumOfNums(nums) {
     var sum = 0
-    for (var i = 0; i < Nums.length; i++) {
-        sum = sum + Nums[i];
+    for (var i = 0; i < nums.length; i++) {
+        sum = sum + nums[i];
     }
     return sum;
 }
@@ -146,12 +145,14 @@ function uniqueElements(group1, group2) {
     for (var i = 0; i < group1.length; i++) {
         if (group2.indexOf(group1[i]) === -1) {
             unique.push(group1[i]);
-        } else continue;
+        } 
     }
     for (var i = 0; i < group2.length; i++) {
         if (group1.indexOf(group2[i]) === -1) {
             unique.push(group2[i]);
-        } else continue;
+        }
     }
     return unique;
 }
+
+
