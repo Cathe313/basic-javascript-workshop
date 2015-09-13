@@ -155,4 +155,14 @@ function uniqueElements(group1, group2) {
     return unique;
 }
 
+//This function takes an array and a function as arguments. 
+//The function returns a new array that maps every element of the input array by passing it through the function.
 
+function mapElements(elements, mapFunction) {
+    var newElements = [];
+    for (var i = 0; i < elements.length; i++) {
+        var temp = mapFunction(elements[i]);
+        newElements.push(temp);
+    }
+    return newElements;
+}
